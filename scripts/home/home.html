@@ -1,0 +1,20 @@
+<div>
+  <!--
+    On the H1 we are using an "A" attribute directive. 
+    It's resuable functionality without an isolate scope.
+    we define it with snake-case and let it do its thing
+  -->
+  <h1 alert-title>Welcome to Qualtrics! &#8482;</h1>
+
+  <div ng-repeat="quiz in quizes" class="quiz-link">
+    <!-- Here we are using an Element Directive called quiz-link.
+    In HTML directives are defined with snake-case 
+    In JS we define the names with camelCase
+    We are passing our Element direct quiz-link some data.
+    So we create an attribute called "data" and give that the value from quiz.
+    We get that quiz from the ng-repeat above ^^
+    Now our quiz-link directive will have access to that data we passed in.
+    -->
+    <quiz-link data="quiz"></quiz-link>
+  </div>
+</div>

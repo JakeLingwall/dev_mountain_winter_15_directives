@@ -1,0 +1,13 @@
+<div>
+  <h1>{{quiz.name}}</h1>
+  <br/>
+  <br/>
+  <div ng-repeat="question in quiz.questions">
+    <!--Here we are using the qualtricsQuestion directive. 
+    Note once again that it's snake-cased because we are in html
+    This Directive has an isolate scope so we are going to pass it data to use
+    We are going to create a parameter on the directives new scope called "question"
+    And we are going to pass that the value of quesiton^^ from above-->
+    <qualtrics-question question="question"></qualtrics-question>
+  </div>
+</div>

@@ -1,0 +1,43 @@
+/* Some basic styles. You should style things better than this. */
+html, body {
+  min-height: 100%;
+  transition: all 5s ease-in;
+}
+
+
+h1{
+  font-size: 48px;
+  color: maroon;
+}
+
+.header {
+  height: 60px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: purple;
+}
+
+.app { 
+  padding: 20px;
+  margin-top: 60px;
+  position: absolute;
+  top: 100px;
+  left: 20px;
+  right: 20px;
+  text-align: center;
+}
+
+.quiz-link {
+  font-size: 18px;
+  font-weight: 600;
+  color: green;
+  transition: all 250ms ease;
+}
+
+.quiz-link:hover {
+  cursor: pointer;
+  color: red;
+  font-size: 24px;
+}

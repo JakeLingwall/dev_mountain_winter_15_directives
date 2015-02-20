@@ -1,0 +1,15 @@
+<!-- Directive templates must have 1 and only 1 root element.
+Thus we wrapped this all in a div.
+-->
+<div>
+  <h3>{{question.title}}</h3>
+  <div ng-repeat="option in question.options">
+    <button ng-click="answerQuestion(option)">{{option.key}}</button>
+    <!-- right here we use the jquery-action directive inside this directive.
+    It's like directive inception!
+    You can nest as many directives as you want. 
+    WEEEEEEEE!!!!
+    -->
+    <span jquery-action>{{option.value}}</span>
+  </div>
+</div>

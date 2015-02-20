@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.13/angular.min.js"></script>
+    <script src="https://code.angularjs.org/1.3.13/angular-route.min.js"></script>
+    <script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <link rel="stylesheet" href="/styles/main.css"/>
+  </head>
+  <body ng-app="qualtrics">
+    <div class="header"></div>
+    <!-- ng-view is the magic sauce to get routs to work. 
+          Angular will switch our templates inside of this element.
+          Making it a SPA! FTW! Win! -->
+    <ng-view class="app"></ng-view>
+    <script src="./scripts/app.js"></script>
+    <script src="./scripts/home/homeCtrl.js"></script>
+    <script src="./scripts/quiz/quizCtrl.js"></script>
+    <script src="./scripts/quiz/quizService.js"></script>
+    <script src="./scripts/directives/qualtrics-question.js"></script>
+    <script src="./scripts/directives/quiz-link.js"></script>
+    <script src="./scripts/directives/alert-title.js"></script>
+    <script src="./scripts/directives/jquery-action.js"></script>
+  </body>
+</html>
